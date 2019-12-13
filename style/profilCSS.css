@@ -1,0 +1,188 @@
+body, html {
+
+
+    padding: 0;
+    margin: 0;
+    height:100%;
+
+}
+
+
+
+
+
+
+
+.photoprofil{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px solid #a0ff23;
+}
+#conteneurprofil{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    align-items: center;
+}
+
+.element{
+    margin-left: auto;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.line{
+    width: 85%;
+    height: 10px;
+    border-bottom: 1px solid black;
+    position: absolute;
+
+
+
+}
+
+
+
+@font-face {
+    font-family: 'circular';
+    src: url('polices/Circular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_ultralight';
+    src: url('polices/Aileron-Ultralight.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_thin';
+    src: url('polices/Aileron-Thin.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_thin_italic';
+    src: url('polices/Aileron-ThinItalic.otf') format('opentype');
+}
+
+
+
+h2 {
+    font-family: 'circular';
+}
+h3 {
+    font-family: 'circular';
+}
+
+body {
+    /* The image used */
+    background-image: url("Background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-attachment: fixed;
+}
+
+
+
+form {
+    width:85%;
+    padding: 30px;
+    background: #000000;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    opacity: 0.7;
+    margin-right: 150px;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+
+
+h2{
+
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 4px;
+    color: #a0ff23;
+}
+
+
+
+
+
+
+
+p{
+    font-size: 20px;
+    color: white;
+    font-family: 'aileron_ultralight';
+}
+
+#flex_container {
+    margin-top: 40vh;
+    transform:
+            translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    font-family: 'circular';
+    /* align-content: space-around; */
+
+
+}
+
+#flex_container>div {
+
+    text-align: center;
+    font-family: 'circular';
+
+}
+
+#conteneur {
+    display: flex;
+    padding-right: 10px;
+    justify-content: flex-end;
+}
+.bouton {
+    font-family: 'circular';
+    padding-right: 10px;
+    transition: 1s;
+
+}
+
+.bouton a {
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    transition: 1s;
+}
+
+
+
+.bouton a:hover {
+    color: #a0ff23;
+    transition: 0.5s;
+
+
+}
+

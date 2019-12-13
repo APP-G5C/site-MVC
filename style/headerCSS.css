@@ -1,0 +1,54 @@
+html,body{
+
+    font: 100% sans-serif;
+    font-family: 'Quicksand';
+    padding: 0;
+
+
+}
+
+form {
+    margin-top: 0;
+}
+
+
+
+
+ul {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#53af57, #35dc39);
+
+
+
+
+
+}
+
+ul li {
+    display: table-cell;
+
+}
+
+ul li a {
+    display: block;
+    text-align: center;
+    color: rgba(256, 256, 256, 1);
+    text-decoration: chartreuse;
+    padding: 10px 10px 10px 10px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
+
+    /* transition: all .3s .1s; */
+}
+
+ul li a:hover,ul li a:focus {
+    background: rgba(255, 255, 255, .2);
+}
+
+ul li a:active {
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .1));
+
+}
+
