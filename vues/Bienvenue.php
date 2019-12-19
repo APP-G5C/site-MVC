@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style/BienvenueCSS.css">
 </head>
 
-<body background= "http://localhost/site%20APP%20MVC/style/Background.jpg">
+<body background= "style/Background.jpg">
 
 <div id="conteneur">
 	<div class ="bouton"> <a href="index.php?cible=utilisateurs&fonction=connexion">Connexion</a> </div>
