@@ -32,3 +32,18 @@
 		$query = 'SELECT * FROM capteurs WHERE id_carte = ' . $ID;
 		return $bdd->query($query)->fetchAll();
 	}
+	
+	
+	function recupererTousLesMessages(PDO $bdd, int $ID): array
+	{
+		$query = 'SELECT * FROM messagerie WHERE id_envoyeur = ' . $ID . ' OR id_recepteur = ' . $ID;
+		
+		return $bdd->query($query)->fetchAll();
+	}
+	
+	function recupererNomPrenom($bdd, int $ID)
+	{
+		$query = 'SELECT nom, prenom FROM utilisateur WHERE id =' . $ID;
+		return $bdd->query($query)->fetch();
+	}
+	
