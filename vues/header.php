@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
-	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/headerCSS.css">
+	<link rel="stylesheet" href="style/headerCSS.css">
 </head>
 <body>
 <ul>
