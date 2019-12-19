@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="http://localhost/site-MVC-master/style/style/profilCSS.css">
+	<link rel="stylesheet" type="text/css" href="style/profilCSS.css">
 	<title>profil</title>
 </head>
 <body>
