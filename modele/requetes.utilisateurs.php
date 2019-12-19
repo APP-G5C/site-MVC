@@ -36,7 +36,7 @@
 	
 	function recupererTousLesMessages(PDO $bdd, int $ID): array
 	{
-		$query = 'SELECT * FROM messagerie WHERE id_envoyeur = ' . $ID . ' OR id_recepteur = ' . $ID;
+		$query = 'SELECT * FROM messagerie WHERE id_envoyeur = ' . $ID . ' OR id_recepteur = ' . $ID . ' ORDER BY date DESC ' ;
 		
 		return $bdd->query($query)->fetchAll();
 	}
