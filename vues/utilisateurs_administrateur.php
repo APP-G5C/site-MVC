@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SmartBeing</title>
-	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/utilisateursCSS.css">
+	<link rel="stylesheet" href="style/utilisateursCSS.css">
 </head>
 <body>
 <?php include("headerAdmin.php"); ?>
