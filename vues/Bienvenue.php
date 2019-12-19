@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SmartBeing</title>
-	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/BienvenueCSS.css">
+	<link rel="stylesheet" href="style/BienvenueCSS.css">
 </head>
 
 <body background= "http://localhost/site%20APP%20MVC/style/Background.jpg">
