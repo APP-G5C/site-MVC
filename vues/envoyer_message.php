@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/envoyer_messageCSS.css"/>
+	<link rel="stylesheet" href="style/envoyer_messageCSS.css"/>
 	<title> SmartBeing </title>
 </head>
 
