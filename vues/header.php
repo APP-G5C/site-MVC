@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Title</title>
-	<link rel="stylesheet" href="style/headerCSS.css">
+	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/headerCSS.css">
 </head>
 <body>
 <ul>
@@ -11,6 +11,7 @@
 	<li><a href="Scores.php">Scores</a></li>
 	<li><a href="index.php?cible=utilisateurs&fonction=profil">Profil</a></li>
 	<li><a href="index.php?cible=FAQ&fonction=FAQ">FAQ</a></li>
+	<li><a href="index.php?cible=messagerie">Messagerie</a></li>
 </ul>
 
 </body>

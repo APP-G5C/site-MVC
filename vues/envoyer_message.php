@@ -2,13 +2,17 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style/envoyer_messageCSS.css"/>
+	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/envoyer_messageCSS.css"/>
 	<title> SmartBeing </title>
 </head>
 
 
 <body>
-<?php include("headerAdmin.php"); ?>
+<?php if ($_SESSION['statut'] == 1){
+	include("headerAdmin.php");
+} else {
+	include("header.php");
+}?>
 <div class="bg">
 	<form action="#" method="POST">
 		<h2>NOUS CONTACTER</h2>
