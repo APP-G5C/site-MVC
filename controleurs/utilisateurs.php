@@ -36,11 +36,12 @@
 					echo 'Mauvais identifiant ou mot de passe !';
 				} else {
 					$_SESSION['mail'] = $mail;
-					$req = $bdd->prepare('SELECT nom, prenom, photo, statut FROM utilisateur WHERE mail = :mail');
+					$req = $bdd->prepare('SELECT id, nom, prenom, photo, statut FROM utilisateur WHERE mail = :mail');
 					$req->execute(array(
 						'mail' => $mail
 					));
 					$donnees = $req->fetch();
+					$_SESSION['id'] = $donnees['id'];
 					$_SESSION['nom'] = $donnees['nom'];
 					$_SESSION['prenom'] = $donnees['prenom'];
 					$_SESSION['photo'] = $donnees['photo'];

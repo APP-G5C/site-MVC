@@ -28,18 +28,10 @@
 					'mail' => $mail
 				));
 				$donnees = $req->fetch();
-				
-				
 				$date = date('Y-m-d H:i:s');
-//				$date = $date->format('Y-m-d H:i:s');
-				
-//				echo DateTime();
-//				$id_recepteur = $bdd->query($query)->fetch();
-//				$datetime = CurrentDateTime();
 				$req = $bdd->prepare('INSERT INTO messagerie(message,  id_envoyeur,date, id_recepteur) VALUES(?,?, ?,?)');
 				$req->execute(array($_POST['message'], $_SESSION['id'],$date, $donnees[0]));
 			}
-			echo 'joseph';
 			break;
 		default:
 			// si aucune fonction ne correspond au paramètre function passé en GET
