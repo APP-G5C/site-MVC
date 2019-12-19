@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SmartBeing</title>
-	<link rel="stylesheet" href="http://localhost/site%20APP%20MVC/style/capteursCSS.css">
+	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/capteursCSS.css">
 </head>
 <body>
 <?php include("headerAdmin.php");

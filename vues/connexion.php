@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="http://localhost/site%20APP%20MVC/style/ConnexionCSS.css" media="screen" type="text/css"/>
+	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/ConnexionCSS.css" media="screen" type="text/css"/>
 </head>
 <body background="Background.jpg">
 

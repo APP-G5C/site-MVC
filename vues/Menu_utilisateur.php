@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SmartBeing</title>
-	<link rel="stylesheet" href="http://localhost/site%20APP%20MVC/style/Menu_utilisateurCSS.css">
+	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/Menu_utilisateurCSS.css">
 </head>
 <body>
 <body background="Background.jpg">

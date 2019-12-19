@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SmartBeing</title>
-	<link rel="stylesheet" href="http://localhost/site%20APP%20MVC/style/FAQ_administrateurCSS.css">
+	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/FAQ_administrateurCSS.css">
 </head>
 <body>
 <?php include("headerAdmin.php"); ?>
