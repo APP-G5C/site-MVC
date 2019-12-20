@@ -10,7 +10,7 @@
 <body>
 <?php include("headerAdmin.php"); ?>
 
-<?php $repertoire = "http://localhost/site%20APP%20MVC/"; ?>
+
 
 
 
@@ -22,7 +22,7 @@
 		<h2>PROFIL</h2>
 		<div class="line"></div>
 		<br>
-		<p><img class="photoprofil" src="<?php echo $repertoire. $_SESSION['photo']; ?>" alt="photo de profil"></p>
+		<p><img class="photoprofil" src="<?php echo $_SESSION['photo']; ?>" alt="photo de profil"></p>
 		<div id="conteneurprofil">
 			
 			

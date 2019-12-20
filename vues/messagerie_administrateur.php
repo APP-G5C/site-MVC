@@ -30,10 +30,9 @@
 
 
 			<div id="message">
-				<h4><?php echo $emetteur['prenom'] . ' ' . $emetteur['nom'] . ' à ' . $recepteur['prenom'] . ' ' . $recepteur['nom'] ?></h4>
-				<h4><?php echo $element['date'] ?></h4>
-
-				<p><?php echo $element['message']; ?></p>
+				<h4><?php echo $emetteur['prenom'] . ' ' . $emetteur['nom'] . ' à ' . $recepteur['prenom'] . ' ' . $recepteur['nom'] . '<br>' . $element['date']. '<br><br>' . $element['message'] ?></h4>
+			
+				
 			</div>
 			<br>
 		<?php } ?>
@@ -65,3 +64,4 @@
 	</style>
 </body>
 </html>
+
