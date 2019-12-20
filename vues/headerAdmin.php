@@ -8,7 +8,7 @@
 <body>
 <ul>
 	<li><a href="index.php?cible=capteurs">Capteurs</a></li>
-	<li><a href="donnees_admin.php">Données</a></li>
+	<li><a href="index.php?cible=utilisateurs&fonction=donnees">Données</a></li>
 	<li><a href="index.php?cible=messagerie">Messagerie</a></li>
 	<li><a href="index.php?cible=utilisateurs&fonction=utilisateurs">Utilisateurs</a></li>
 	<li><a href="index.php?cible=utilisateurs&fonction=profilAdmin">Profil</a></li>

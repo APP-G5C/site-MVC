@@ -28,6 +28,7 @@
 			<div class="element"><p>Nom : <?php echo $_SESSION['nom'] ?></p></div>
 			<div class="element"><p>Prénom : <?php echo $_SESSION['prenom'] ?></p></div>
 			<div class="element"><p>adresse email : <?php echo $_SESSION['mail'] ?></p></div>
+			
 		</div>
 	
 	</form>
