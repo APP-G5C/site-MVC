@@ -34,13 +34,13 @@ ul {
 }
 
 ul li:hover{
-    flex-grow : 0.2;
-    transition: 0.5s;
+    flex-grow : 0.1;
+    transition: 0.2s;
     background-color: green;
     
 }
 ul li {
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 ul li a {
@@ -58,7 +58,7 @@ ul li a {
 
 ul li a:hover,ul li a:focus {
     background: rgba(255, 255, 255, .2);
-    size: 150%;
+    size: 120%;
     transition: 0.5s;
 }
 
