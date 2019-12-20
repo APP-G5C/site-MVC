@@ -35,6 +35,8 @@
 				if (!$resultat) {
 					echo 'Mauvais identifiant ou mot de passe !';
 				} else {
+					$date = date('Y-m-d');
+					$heure = date('H:i:s');
 					$_SESSION['mail'] = $mail;
 					$req = $bdd->prepare('SELECT id, nom, prenom, photo, statut FROM utilisateur WHERE mail = :mail');
 					$req->execute(array(
@@ -47,8 +49,9 @@
 					$_SESSION['photo'] = $donnees['photo'];
 					$_SESSION['statut'] = $donnees['statut'];
 					$req->closeCursor();
-					
-					
+					$req = $bdd->prepare('INSERT INTO connexion(date, heure, id_utilisateur) VALUES(?,?,?)');
+					$req->execute(array($date,$heure,$_SESSION['id']));
+					$req->closeCursor();
 					echo 'Vous êtes connecté !';
 					if ($_SESSION['statut'] == 1) {
 						$vue = "Menu_administrateur";
@@ -97,6 +100,11 @@
 		case 'deconnexion':
 			session_destroy();
 			$vue='Bienvenue';
+			break;
+		case 'donnees':
+			$vue='donnees_administrateur';
+			$nombreUtilisateurs = nombreUtilisateurs($bdd);
+			$nombreConnexionDuJour = nombreConnexionDuJour($bdd);
 			break;
 		
 		default:
