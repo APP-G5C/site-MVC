@@ -47,3 +47,16 @@
 		return $bdd->query($query)->fetch();
 	}
 	
+	function nombreUtilisateurs($bdd){
+		$query = 'SELECT COUNT(id) FROM utilisateur WHERE statut = 0 ';
+		$nombre =  $bdd->query($query)->fetch();
+		return $nombre[0];
+	}
+	
+	function nombreConnexionDuJour($bdd){
+		$date = date('Y-m-d');
+		$query = 'SELECT COUNT(id_connexion) FROM connexion WHERE date = "' . $date . '"';
+		$nombre = $bdd->query($query)->fetch();
+		return $nombre[0];
+	}
+	
