@@ -7,7 +7,7 @@
 </head>
 <body>
 <ul>
-	<li><a href="Tests.php">Tests</a></li>
+	<li><a href="index.php?cible=capteurs&fonction=lancertest">Tests</a></li>
 	<li><a href="Scores.php">Scores</a></li>
 	<li><a href="index.php?cible=utilisateurs&fonction=profil">Profil</a></li>
 	<li><a href="index.php?cible=FAQ&fonction=FAQ">FAQ</a></li>
