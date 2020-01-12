@@ -12,7 +12,7 @@
 		<h2>Utilisateur</h2>
 		<div class="line"></div>
 		
-		<button class="button"><a style="color:white; text-decoration:none" href="enregistrement.php">Rechercher un utilisateur</a></button>
+		<button class="button"><a style="color:white; text-decoration:none" href="index.php?fonction=recherche">Rechercher un utilisateur</a></button>
 		<button class="button"><a style="color:white; text-decoration:none" href="index.php?fonction=CreerCompte">Créer un compte</a></button>
 	</form>
 </div>
