@@ -76,6 +76,13 @@
 		case 'utilisateurs':
 			$vue = 'utilisateurs_administrateur';
 			break;
+		case 'recherche':
+			$vue = 'recherche';
+			$liste = recupererTousLesUtilisateur($bdd);
+			if(empty($liste)) {
+				$alerte = "Aucune question dans la FAQ pour le moment";
+			}
+			break;
 		case 'CreerCompte':
 			$vue = 'creercompte';
 			if (isset($_POST['mail']) ) {
