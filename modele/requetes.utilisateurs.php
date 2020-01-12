@@ -26,6 +26,13 @@
 		return $bdd->query($query)->fetchAll();
 		
 	}
+
+	function recupererTousLesUtilisateur(PDO $bdd): array
+	{
+		$query = 'SELECT * FROM utilisateur';
+		return $bdd->query($query)->fetchAll();
+		
+	}
 	
 	function recupererCapteurs(PDO $bdd, int $ID): array
 	{
