@@ -23,6 +23,15 @@
 			<label><b>prenom</b></label>
 			<input type="text" placeholder="Entrez le prenom d'utilisateur" name="prenom" id="prenom" required/>
 
+			<label><b>Âge</b></label>
+			<input type="text" placeholder="Entrez l'âge de l'utilisateur" name="age" id="age" required/>
+
+			<label><b>Acuité visuelle</b></label>
+			<input type="text" placeholder="Entrez l'acuité visuelle de l'utilisateur" name="vision" id="vision" required/>
+
+			<label><b>Posséde le permis </b></label>
+			<input type="text" placeholder="L'utilisateur posséde t'il le permis ?" name="permis" id="permis" required/>
+
 			<label><b>Photo de Profil</b></label>
 			<input type="file" name="photo" id="photo">
 
