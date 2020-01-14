@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style/headerCSS.css">
 </head>
 <body>
-<ul>
+<ul id="header">
 	<li><a href="index.php?cible=capteurs">Capteurs</a></li>
 	<li><a href="index.php?cible=utilisateurs&fonction=donnees">Données</a></li>
 	<li><a href="index.php?cible=messagerie">Messagerie</a></li>
