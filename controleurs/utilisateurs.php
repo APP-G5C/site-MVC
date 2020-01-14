@@ -38,7 +38,7 @@
 					$date = date('Y-m-d');
 					$heure = date('H:i:s');
 					$_SESSION['mail'] = $mail;
-					$req = $bdd->prepare('SELECT id, nom, prenom, photo, statut FROM utilisateur WHERE mail = :mail');
+					$req = $bdd->prepare('SELECT id, nom, prenom, photo, statut,age,vision,permis FROM utilisateur WHERE mail = :mail');
 					$req->execute(array(
 						'mail' => $mail
 					));
@@ -48,9 +48,13 @@
 					$_SESSION['prenom'] = $donnees['prenom'];
 					$_SESSION['photo'] = $donnees['photo'];
 					$_SESSION['statut'] = $donnees['statut'];
+					$_SESSION['age'] = $donnees['age'];
+					$_SESSION['vision'] = $donnees['vision'];
+					$_SESSION['permis'] = $donnees['permis'];
+
 					$req->closeCursor();
 					$req = $bdd->prepare('INSERT INTO connexion(date, heure, id_utilisateur) VALUES(?,?,?)');
-					$req->execute(array($date,$heure,$_SESSION['id']));
+	
 					$req->closeCursor();
 					echo 'Vous êtes connecté !';
 					if ($_SESSION['statut'] == 1) {
@@ -80,7 +84,7 @@
 			$vue = 'recherche';
 			$liste = recupererTousLesUtilisateur($bdd);
 			if(empty($liste)) {
-				$alerte = "Aucune question dans la FAQ pour le moment";
+				$alerte = "Aucune personne inscrite pour le moment";
 			}
 			break;
 		case 'CreerCompte':
@@ -100,8 +104,8 @@
 				}
 				
 				
-				$req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mail, password, photo, statut) VALUES(?, ?, ?, ?, ?, ?)');
-				$req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['mail'], $_POST['password'], $_FILES['photo']['name'], $statut));
+				$req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mail, password, photo,age,vision,permis, statut) VALUES(?, ?, ?, ?, ?,?,?,?, ?)');
+				$req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['mail'], $_POST['password'], $_FILES['photo']['name'], $_POST['age'], $_POST['vision'], $_POST['permis'], $statut));
 			}
 			break;
 		case 'deconnexion':
