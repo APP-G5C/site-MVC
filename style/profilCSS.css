@@ -24,17 +24,21 @@ body, html {
     height: auto;
 }
 #conteneurprofil{
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 300px;
+    padding-top: 40px;
+    display: block;
+    margin-left: 40%;
+
+    width: 1000px;
     align-items: center;
+    text-align: left;    
+    font-size: 35px;
+    color: white;
+    font-family: 'aileron_thin_italic';
 }
 
 .element{
-    margin-left: auto;
-    font-weight: bold;
+
+
 }
 
 
@@ -56,7 +60,7 @@ body, html {
 .line{
     width: 85%;
     height: 10px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid green;
     position: absolute;
 
 
@@ -136,11 +140,7 @@ h2{
 
 
 
-p{
-    font-size: 20px;
-    color: white;
-    font-family: 'aileron_thin';
-}
+
 
 #flex_container {
     margin-top: 40vh;
