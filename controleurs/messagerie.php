@@ -28,9 +28,13 @@
 					'mail' => $mail
 				));
 				$donnees = $req->fetch();
-				$date = date('Y-m-d H:i:s');
-				$req = $bdd->prepare('INSERT INTO messagerie(message,  id_envoyeur,date, id_recepteur) VALUES(?,?, ?,?)');
-				$req->execute(array($_POST['message'], $_SESSION['id'],$date, $donnees[0]));
+				if (!$donnees) {
+					echo 'Adresse mail invalide';
+				} else {
+					$date = date('Y-m-d H:i:s');
+					$req = $bdd->prepare('INSERT INTO messagerie(message,  id_envoyeur,date, id_recepteur) VALUES(?,?, ?,?)');
+					$req->execute(array($_POST['message'], $_SESSION['id'], $date, $donnees[0]));
+				}
 			}
 			break;
 		default:
