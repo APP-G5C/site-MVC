@@ -16,6 +16,9 @@
 
 <div class="bg">
 	<form action="#" method="POST">
+		<?php if (empty($_SESSION['mail'])){
+			?><h3>Vous devez vous connecter</h3><?php
+		} else {?>
 		<div id="conteneur">
 			<div class ="bouton"> <a href="index.php?cible=utilisateurs&fonction=deconnexion">Déconnexion</a> </div>
 		</div>
@@ -34,6 +37,7 @@
 			<div class="element"><p>Posséde le permis : <?php echo $_SESSION['permis'] ?></p></div>
 
 		</div>
+		<?php } ?>
 	
 	</form>
 </div>

@@ -21,10 +21,10 @@
 		<?php foreach ($liste as $element) { ?>
 			
 			
-			<h4> <?php  echo $element['ID'] . '.     ' ; echo $element['Question'] . '<br />'; ?> </h4>
+			<h4> <?php  echo $element['ID'] . '.     ' ; echo htmlspecialchars($element['Question']) . '<br />'; ?> </h4>
 			<p>
 				
-				<?php echo $element['Réponse'] . '<br />'; ?>
+				<?php echo htmlspecialchars($element['Réponse']) . '<br />'; ?>
 			
 			</p>
 			
