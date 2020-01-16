@@ -28,6 +28,9 @@
 			<div class="element"><p>Nom : <?php echo $_SESSION['nom'] ?></p></div>
 			<div class="element"><p>Prénom : <?php echo $_SESSION['prenom'] ?></p></div>
 			<div class="element"><p>adresse email : <?php echo $_SESSION['mail'] ?></p></div>
+			<div class="element"><p>Âge :<?php echo $_SESSION['age'] ?></p></div>
+			<div class="element"><p>Acuité visuelle : <?php echo $_SESSION['vision'] ?></p></div>
+			<div class="element"><p>Posséde le permis : <?php echo $_SESSION['permis'] ?></p></div>
 			
 		</div>
 	
