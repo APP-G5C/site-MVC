@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SmartBeing</title>
-	<link rel="stylesheet" href="style/recherche.css">
+	<link rel="stylesheet" href="style/rechercheCSS.css">
+	<?php include("headerAdmin.php"); ?>
 
 <script>
 function myFunction() {
