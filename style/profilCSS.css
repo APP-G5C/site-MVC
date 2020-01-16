@@ -30,7 +30,7 @@ body, html {
 
     width: 1000px;
     align-items: center;
-    text-align: left;    
+    text-align: left;
     font-size: 35px;
     color: white;
     font-family: 'aileron_thin_italic';
@@ -135,7 +135,11 @@ h2{
 }
 
 
-
+h3{
+    font-size: 20px;
+    color: white;
+    font-family: 'aileron_thin';
+}
 
 
 
