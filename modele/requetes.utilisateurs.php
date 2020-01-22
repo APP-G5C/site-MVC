@@ -27,6 +27,14 @@
 		
 	}
 
+	function recupererToutLesScores(PDO $bdd): array
+	{
+
+		$query = 'SELECT * FROM score';
+		return $bdd->query($query)->fetchAll();
+		
+	}
+
 	function recupererTousLesUtilisateur(PDO $bdd): array
 	{
 		$query = 'SELECT * FROM utilisateur';
@@ -38,6 +46,7 @@
 	{
 		$query = 'SELECT * FROM capteurs WHERE id_carte = ' . $ID;
 		return $bdd->query($query)->fetchAll();
+
 	}
 
 
