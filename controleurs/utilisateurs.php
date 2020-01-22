@@ -118,6 +118,7 @@
 			$vue='donnees_administrateur';
 			$nombreUtilisateurs = nombreUtilisateurs($bdd);
 			$nombreConnexionDuJour = nombreConnexionDuJour($bdd);
+			$liste = recupererToutLesScores($bdd);
 			break;
 
 			case 'Score':
