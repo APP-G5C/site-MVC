@@ -6,7 +6,34 @@
 	<link rel="stylesheet" href="style/donneesCSS.css">
 </head>
 <body>
-<?php include("headerAdmin.php"); ?>
+<?php include("headerAdmin.php");
+	$arrayF = array();
+	$arrayT = array();
+	$arrayPmin = array();
+	$arrayPmax = array();
+	$arrayRec = array();
+	$arrayRep = array();
+	foreach ($liste as $element) {
+		array_push($arrayF,$element['frequenceCardiaque'] );
+		array_push($arrayT,$element['TemperaturePeau'] );
+		array_push($arrayPmin,$element['PerceptionAuditiveInf'] );
+		array_push($arrayPmax,$element['PerceptionAuditiveSup'] );
+		array_push($arrayRec,$element['ReconTonalites'] );
+		array_push($arrayRep,$element['ReprodMotifsSonore'] );
+
+		$averageF = array_sum($arrayF) / count($arrayF); 
+		$averageT = array_sum($arrayT) / count($arrayT); 
+		$averagePmin = array_sum($arrayPmin) / count($arrayPmin); 
+		$averagePmax = array_sum($arrayPmax) / count($arrayPmax); 
+		$averageRec = array_sum($arrayRec) / count($arrayRec); 
+		$averageRep = array_sum($arrayRep) / count($arrayRep);
+
+	}
+
+		$numbers = array_column($averageF);
+		$min=min($averageF);
+
+ ?>
 <div class="bg">
 	<form action="#" method="POST">
 		<div class="flex_container">
@@ -26,31 +53,31 @@
 					</tr>
 					<tr>
 						<td>Fréquence cardiaque</td>
+						<td><?php echo $averageF ?></td>
 						<td>nn</td>
-						<td>nn</td>
-						<td>nn</td>
+						<td><?php echo $min ?></td>
 					</tr>
 					<tr>
 						<td>Température de la peau</td>
-						<td>nn</td>
+						<td><?php echo $averageT ?></td>
 						<td>nn</td>
 						<td>nn</td>
 					</tr>
 					<tr>
 						<td>Perception auditive</td>
-						<td>nn</td>
+						<td><?php  echo $averagePmin . " - " . $averagePmax . " Hz"?></td>
 						<td>nn</td>
 						<td>nn</td>
 					</tr>
 					<tr>
 						<td>Reconnaissance de tonalité</td>
-						<td>nn</td>
+						<td><?php echo $averageRec ?></td>
 						<td>nn</td>
 						<td>nn</td>
 					</tr>
 					<tr>
 						<td>Reproduction de motifs sonores</td>
-						<td>nn</td>
+						<td><?php echo $averageRep ?></td>
 						<td>nn</td>
 						<td>nn</td>
 					</tr>
