@@ -50,6 +50,10 @@ table{
     margin-left: 36%;
 
 }
+#average{
+    width: 50%;
+        margin:center;
+}
 td,th{
 
     border-right: 1px solid

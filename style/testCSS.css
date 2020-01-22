@@ -36,7 +36,7 @@ body {
 table{
     border: 1px solid black;
     border-collapse: collapse;
-    margin: 0 30% ;
+    margin: 0 38% ;
 
 
 }
@@ -58,4 +58,21 @@ form {
     margin-right: 150px;
     margin-left: 80px;
     margin-top: 0px;
+}
+
+button[type=submit] {
+    background-color: #53af57;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    margin-top: 35px;
+    margin-left: 42%;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+}
+button[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
 }
