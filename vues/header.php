@@ -8,7 +8,7 @@
 <body>
 <ul id="header">
 	<li><a href="index.php?cible=capteurs&fonction=lancertest">Tests</a></li>
-	<li><a href="Scores.php">Scores</a></li>
+	<li><a href="index.php?cible=utilisateurs&fonction=Score">Scores</a></li>
 	<li><a href="index.php?cible=utilisateurs&fonction=profil">Profil</a></li>
 	<li><a href="index.php?cible=FAQ&fonction=FAQ">FAQ</a></li>
 	<li><a href="index.php?cible=messagerie">Messagerie</a></li>

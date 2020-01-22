@@ -35,7 +35,7 @@
 			$question->closeCursor(); // Termine le traitement de la requête
 		
 		<button class="button"><a style="color:white; text-decoration:none" href="index.php?cible=FAQ&fonction=modifierFAQ">Effectuer un changement</a>
-	
+		<button class="button"><a style="color:white; text-decoration:none" href="index.php?cible=FAQ&fonction=GCU">GCU</a>
 	</form>
 </div>
 

@@ -31,6 +31,8 @@
 			
 			<?php
 		} ?>
+		<button class="button"><a style="color:white; text-decoration:none" href="index.php?cible=FAQ&fonction=GCU">GCU</a>
+
 	</form>
 </div>
 

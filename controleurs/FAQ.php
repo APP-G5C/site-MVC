@@ -18,6 +18,11 @@
 				$alerte = "Aucune question dans la FAQ pour le moment";
 			}
 			break;
+
+		case 'GCU':
+			$vue = "GCU";
+			
+			break;
 		case 'FAQ':
 			$vue = "FAQ";
 			$liste = recupererTouteLaFAQ($bdd);

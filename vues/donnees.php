@@ -1,18 +1,17 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="style/testCSS.css">
-	<title>profil</title>
+	<meta charset="UTF-8">
+	<title>SmartBeing</title>
+	<link rel="stylesheet" href="style/donneesCSS.css">
 </head>
 <body>
-<?php include("header.php"); ?>
-
-<form action="#">
-	<br>
-<table>
+<?php include("headerAdmin.php"); ?>
+<div class="bg">
+	<form action="#" method="POST">
+		<div class="flex_container">
+			
+				<table>
 	<tr>
 		<th>Test</th>
 		<th>Résultat</th>
@@ -44,16 +43,8 @@
 		
 	</tr>
 </table>
-
-
-</form>
-
-
-
-
-
-
-
+	</form>
+</div>
 
 <style>
 	/* width */
@@ -81,6 +72,6 @@
 	}
 </style>
 
-
 </body>
-</ */
+
+</html>

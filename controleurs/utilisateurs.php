@@ -54,7 +54,7 @@
 
 					$req->closeCursor();
 					$req = $bdd->prepare('INSERT INTO connexion(date, heure, id_utilisateur) VALUES(?,?,?)');
-	
+					$req->execute(array($date, $heure,$_SESSION['id']));
 					$req->closeCursor();
 					echo 'Vous êtes connecté !';
 					if ($_SESSION['statut'] == 1) {
@@ -96,6 +96,7 @@
 					$retour = copy($_FILES['photo']['tmp_name'], $_FILES['photo']['name']);
 					
 				}
+
 				$Statut = isset($_POST['statut']) ? $_POST['statut'] : NULL;
 				if ($Statut == "checked") {
 					$statut = 1;
@@ -112,8 +113,21 @@
 			session_destroy();
 			$vue='Bienvenue';
 			break;
-		case 'donnees':
+
+		case 'donnees_administrateur':
 			$vue='donnees_administrateur';
+			$nombreUtilisateurs = nombreUtilisateurs($bdd);
+			$nombreConnexionDuJour = nombreConnexionDuJour($bdd);
+			break;
+
+			case 'Score':
+			$vue='Score';
+			$liste = recupererScore($bdd,$_SESSION['id']);
+			break;
+
+			case 'Score_admin':
+			$vue='Score_admin';
+			$liste = recupererScore($bdd,$_GET['id']);
 			$nombreUtilisateurs = nombreUtilisateurs($bdd);
 			$nombreConnexionDuJour = nombreConnexionDuJour($bdd);
 			break;

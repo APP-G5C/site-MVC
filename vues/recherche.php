@@ -46,7 +46,7 @@ function myFunction() {
 
 		<ul id="myUL">
 			<?php foreach ($liste as $element) { ?>
-  			<li><a href="#"><?php  echo $element['prenom'] . ' '; echo $element['nom']; ?></a></li>
+  			<li><a href="index.php?cible=utilisateurs&fonction=Score_admin& id= <?php echo $element['id']?> "><?php  echo $element['prenom'] . ' '; echo $element['nom']; ?></a></li>
   		<?php
 		} ?>
 

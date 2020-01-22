@@ -39,6 +39,13 @@
 		$query = 'SELECT * FROM capteurs WHERE id_carte = ' . $ID;
 		return $bdd->query($query)->fetchAll();
 	}
+
+
+	function recupererScore(PDO $bdd, int $ID): array
+	{
+		$query = 'SELECT * FROM score WHERE id_utilisateur = ' . $ID;
+		return $bdd->query($query)->fetchAll();
+	}
 	
 	
 	function recupererTousLesMessages(PDO $bdd, int $ID): array
