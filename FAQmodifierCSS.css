@@ -1,0 +1,135 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+@font-face {
+    font-family: 'circular';
+    src: url('polices/Circular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_ultralight';
+    src: url('polices/Aileron-Ultralight.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_thin';
+    src: url('polices/Aileron-Thin.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_thin_italic';
+    src: url('polices/Aileron-ThinItalic.otf') format('opentype');
+}
+
+
+
+
+h2 {
+    font-family: 'circular';
+}
+h3 {
+    font-family: 'circular';
+}
+
+body {
+    /* The image used */
+    background-image: url("Background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-attachment: fixed;
+}
+
+
+
+form {
+    width:85%;
+    padding: 30px;
+    background: #000000;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    opacity: 0.7;
+    margin-right: 150px;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+
+
+h2{
+
+    font-size: 60px;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 4px;
+    color: #a0ff23;
+}
+h3{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+}
+
+.line{
+    width: 85%;
+    height: 10px;
+    border-bottom: 1px solid #a0ff23;
+    position: absolute;
+
+
+
+}
+
+
+label{
+    margin-top:30px;
+    text-align: center;
+    display: block;
+    font-size: 100px;
+    color: white;
+    font-family: 'aileron_ultralight';
+}
+
+h4{
+    font-family: 'aileron_thin_italic';
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: #a0ff23;
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+    color: white;
+    font-family: 'aileron_ultralight';
+}
+
+
+.button {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #a0ff23;
+    border: none;
+    color: black;
+    padding: 20px 35px;
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+    display: block;
+
+    border-radius: 5px;
+    font-family: 'aileron_thin';
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: green;
+    transition: 0.2s;
+    color: black;
+}

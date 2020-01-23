@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+@font-face {
+    font-family: 'circular';
+    src: url('polices/Circular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_ultralight';
+    src: url('polices/Aileron-Ultralight.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_thin';
+    src: url('polices/Aileron-Thin.otf') format('opentype');
+}
+@font-face {
+    font-family: 'aileron_thin_italic';
+    src: url('polices/Aileron-ThinItalic.otf') format('opentype');
+}
+
+body {
+    /* The image used */
+    background-image: url("Background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-attachment: fixed;
+}
+
+form {
+    width:85%;
+    padding: 30px;
+    background: #000000;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    opacity: 0.7;
+    margin-right: 150px;
+    margin-left: 80px;
+    margin-top: 0px;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 36%;
+
+}
+td,th{
+
+    border-right: 1px solid
+}
+th{background-color: rgb(192,192,192)
+
+}
+tr:nth-child(odd) {background: #FFF }
+tr:nth-child(even)  {background: #EEE}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+}
