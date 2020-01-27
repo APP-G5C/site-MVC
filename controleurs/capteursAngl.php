@@ -20,6 +20,7 @@
 			$vue = "error404";
 			$title = "error404";
 			$message = "404 Error : this page does not exist.";
+			break;
 		
 	}
 	

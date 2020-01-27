@@ -13,6 +13,8 @@
 	
 	switch ($function) {
 		case 'bienvenueAngl':
+			
+
 			$vue = "BienvenueAngl";
 			$title = "BienvenueAngl";
 			break;
