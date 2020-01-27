@@ -11,6 +11,7 @@
 } else {
 	include("header.php");
 }?>
+
 <div class="bg">
 
 

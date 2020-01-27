@@ -8,6 +8,7 @@
 <body>
 <?php include("header.php"); ?>
 
+
 	<form action="#" method="POST">
 		
 		<h2>Veuillez suivre les instructions suivantes</h2>
@@ -22,6 +23,7 @@
 			</p>
 			<p>Ne tenez pas de mélange contenant des substances inflammables sous la distribution centrale. Les pièces en matière synthétique
 				risquent de se consumer et de se mettre à fondre</p>
+			
 		
 		</fieldset>
 		

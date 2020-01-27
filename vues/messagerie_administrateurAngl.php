@@ -7,10 +7,11 @@
 </head>
 <body>
 <?php if ($_SESSION['statut'] == 1){
-	include("headerAdmin.php");
+	include("headerAdminAngl.php");
 } else {
 	include("header.php");
 }?>
+
 <div class="bg">
 
 
