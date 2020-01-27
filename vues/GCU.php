@@ -10,7 +10,7 @@
 
 	<form action="#" method="POST">
 		
-		<h2>GCU</h2>
+		<h2>CGU</h2>
 		<fieldset>
 			<p>Le présent document a pour objet de définir les modalités et conditions dans lesquelles d’une part,  ROLLAND Nathan, ci-après dénommé l’EDITEUR, met à la disposition de ses utilisateurs le site, et les services disponibles sur le site et d’autre part, la manière par laquelle l’utilisateur accède au site et utilise ses services.
 

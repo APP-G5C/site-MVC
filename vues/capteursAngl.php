@@ -42,8 +42,8 @@
 				}
 			}
 		?>
-		
-		<button class="button"><a style="color:white; text-decoration:none" href="FAQ.html">Modify Cards</a></button>
+
+		<button class="button"><a style="color:white; text-decoration:none" href="index.php?cible=capteursAngl&fonction=modifAngl">Modifer les cartes</a></button>
 		
 	</form>
 </div>

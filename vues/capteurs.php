@@ -18,7 +18,7 @@
 				<h3>Carte connecté :</h3>
 			</div>
 			<div class="box">
-				<h3>Catpeurs connecté :</h3>
+				<h3>Capteurs connectés :</h3>
 			</div>
 		</div>
 		<?php foreach ($ListCarte as $element) { ?>
@@ -42,7 +42,7 @@
 			}
 		?>
 		
-		<button class="button"><a style="color:white; text-decoration:none" href="index.php?cible=utilisateurs&fonction=modif">Modifer les cartes</a></button>
+		<button class="button"><a style="color:white; text-decoration:none" href="index.php?cible=capteurs&fonction=modif">Modifer les cartes</a></button>
 		
 	</form>
 </div>

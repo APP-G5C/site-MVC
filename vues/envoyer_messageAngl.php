@@ -2,7 +2,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="http://localhost/site-MVC-master/style/envoyer_messageCSS.css"/>
+	<link rel="stylesheet" href="style/envoyer_messageCSS.css"/>
 	<title> SmartBeing </title>
 </head>
 
@@ -11,7 +11,7 @@
 <?php if ($_SESSION['statut'] == 1){
 	include("headerAdminAngl.php");
 } else {
-	include("header.php");
+	include("headerAngl.php");
 }?>
 
 <div class="bg">
@@ -24,7 +24,7 @@
 		<label for="e-mail">Recipient's Email :</label>
 		<input type="text" style="font-size: 25px;" id="mail" name="mail" required><br>
 
-		<label for="message"Your Message : </label>
+		<label for="message">Your Message : </label>
 		<input type="text" style="
   			  vertical-align: top;
   			  margin-top:10px;
@@ -37,8 +37,6 @@
 			   name="message"
 			   id="message"
 			   required/><br>
-		<!--		<textarea id="message" style="font-size: 25px;" required></textarea><br>-->
-
 		<a href="index.php">
 			<button type="submit" name="submit">Envoyer</button>
 		</a>

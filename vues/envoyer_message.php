@@ -37,7 +37,7 @@
 			   name="message"
 			   id="message"
 			   required/><br>
-		<!--		<textarea id="message" style="font-size: 25px;" required></textarea><br>-->
+	
 
 		<a href="index.php">
 			<button type="submit" name="submit">Envoyer</button>

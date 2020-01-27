@@ -33,7 +33,7 @@
   			resize: vertical;
   			background-color: white;" name="reponse" id="reponse"/>
 	<button class="button" style="color:white; text-decoration:none" href="index.php">
-		Ajouter une question
+		Add a question
 	</button>
 </form>
 

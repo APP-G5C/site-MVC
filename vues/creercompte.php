@@ -29,7 +29,7 @@
 			<label><b>Acuité visuelle</b></label>
 			<input type="text" placeholder="Entrez l'acuité visuelle de l'utilisateur" name="vision" id="vision" required/>
 
-			<label><b>Posséde le permis </b></label>
+			<label><b>Posséde le permis de conduire</b></label>
 			<input type="text" placeholder="L'utilisateur posséde t'il le permis ?" name="permis" id="permis" required/>
 
 			<label><b>Photo de Profil</b></label>
@@ -46,7 +46,7 @@
 
 
 
-			<a href="index.php"><button type="submit"  name = "submit">Connexion</button></a>
+			<a href="index.php"><button type="submit"  name = "submit">Ajouter compte</button></a>
 
 		</form>
 	
