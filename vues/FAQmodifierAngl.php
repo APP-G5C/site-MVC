@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="style/FAQmodifierCSS.css">
 </head>
 <body>
-<?php include("headerAdmin.php"); ?>
+<?php include("headerAdminAngl.php"); ?>
+
 
 <form action="" method="post">
 

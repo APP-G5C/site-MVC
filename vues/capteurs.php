@@ -6,11 +6,8 @@
 	<link rel="stylesheet" href="style/capteursCSS.css">
 </head>
 <body>
-<?php include("headerAdmin.php");
+<?php include("headerAdmin.php"); ?>
 
-
-
-?>
 <div class="bg">
 	
 	
@@ -45,7 +42,7 @@
 			}
 		?>
 		
-		<button class="button"><a style="color:white; text-decoration:none" href="FAQ.html">Modifer les cartes</a></button>
+		<button class="button"><a style="color:white; text-decoration:none" href="index.php?cible=utilisateurs&fonction=modif">Modifer les cartes</a></button>
 		
 	</form>
 </div>

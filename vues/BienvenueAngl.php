@@ -8,9 +8,9 @@
 </head>
 <body background= "style/Background.jpg">
 <div id="conteneur">
-	<div class ="bouton"> <a href="index.php?cible=utilisateurs&fonction=connexion">Connexion</a> </div>
-	<div class="bouton"> <a href="FAQbis.php">?</a></div>
+	<div class ="bouton"> <a href="index.php?cible=utilisateursAngl&fonction=connexionAngl">Connection</a> </div>
 </div>
+<?php include("vues/lang.php")?>
 <div id="flex_container">
 	<div>
 		<h1>SmartBeing</h1>

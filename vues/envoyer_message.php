@@ -13,6 +13,7 @@
 } else {
 	include("header.php");
 }?>
+
 <div class="bg">
 	<form action="#" method="POST">
 		<h2>NOUS CONTACTER</h2>

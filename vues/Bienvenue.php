@@ -11,8 +11,8 @@
 
 <div id="conteneur">
 	<div class ="bouton"> <a href="index.php?cible=utilisateurs&fonction=connexion">Connexion</a> </div>
-	<div class="bouton"> <a href="FAQbis.php">?</a></div>
 </div>
+<?php include("vues/lang.php")?>
 
 <div id="flex_container">
 	<div>

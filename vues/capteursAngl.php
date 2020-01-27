@@ -6,8 +6,9 @@
 	<link rel="stylesheet" href="style/capteursCSS.css">
 </head>
 <body>
-<?php include("headerAdmin.php");
+<?php include("headerAdminAngl.php");
 ?>
+
 <div class="bg">
 	
 	

@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="style/FAQ_administrateurCSS.css">
 </head>
 <body>
-<?php include("headerAdmin.php"); ?>
+<?php include("headerAdminAngl.php"); ?>
+
 <div class="bg">
 	
 	<form action="" method="POST">
