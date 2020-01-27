@@ -9,7 +9,7 @@
 <?php if ($_SESSION['statut'] == 1){
 	include("headerAdminAngl.php");
 } else {
-	include("header.php");
+	include("headerAngl.php");
 }?>
 
 <div class="bg">
@@ -20,7 +20,7 @@
 	
 	<div id="conteneur">
 	<button class="button"><a style="color:white; text-decoration:none"
-							  href="index.php?cible=messagerie&fonction=envoyer">Send Message</a></button>
+							  href="index.php?cible=messagerieAngl&fonction=envoyerAngl">Send Message</a></button>
 
 		<br>
 		<?php foreach ($liste as $element) {
@@ -34,7 +34,7 @@
 				<h4><?php echo $emetteur['prenom'] . ' ' . $emetteur['nom'] . ' à ' . $recepteur['prenom'] . ' ' . $recepteur['nom'] ?></h4>
 				<h4><?php echo $element['date'] ?></h4>
 
-				<p><?php echo $element['message']; ?></p>
+				<p><?php echo htmlspecialchars($element['message']); ?></p>
 			</div>
 			<br>
 		<?php } ?>

@@ -20,13 +20,17 @@
 		<h2>PROFILE</h2>
 		<div class="line"></div>
 		<br>
-		<p><img class="photoprofil" src="<?php echo $repertoire. $_SESSION['photo']; ?>" alt="photo de profil"></p>
+		<p><img class="photoprofil" src="<?php echo $_SESSION['photo']; ?>" alt="photo de profil"></p>
 		<div id="conteneurprofil">
 			
 			
 			<div class="element"><p>Last name : <?php echo $_SESSION['nom'] ?></p></div>
 			<div class="element"><p>First name : <?php echo $_SESSION['prenom'] ?></p></div>
 			<div class="element"><p>Email adress : <?php echo $_SESSION['mail'] ?></p></div>
+			<div class="element"><p>Age :<?php echo $_SESSION['age'] ?></p></div>
+			<div class="element"><p>Visual acuity : <?php echo $_SESSION['vision'] ?></p></div>
+			<div class="element"><p>Has the driving license : <?php echo $_SESSION['permis'] ?></p></div>
+
 		</div>
 	
 	</form>

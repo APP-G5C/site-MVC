@@ -13,20 +13,27 @@
 
 <div class="bg">
 	<form action="#" method="POST">
+		<?php if (empty($_SESSION['mail'])){
+			?><h3>You have to log in</h3><?php
+		} else {?>
 		<div id="conteneur">
 			<div class ="bouton"> <a href="index.php?cible=utilisateurs&fonction=deconnexion">Log out</a> </div>
 		</div>
-		<h2>PROFIL</h2>
+		<h2>PROFILE</h2>
 		<div class="line"></div>
 		<br>
-		<p><img class="photoprofil" src="<?php echo $repertoire. $_SESSION['photo']; ?>" alt="photo de profil"></p>
+		<p><img class="photoprofil" src="<?php echo $_SESSION['photo']; ?>" alt="photo de profil"></p>
 		<div id="conteneurprofil">
 			
 			
 			<div class="element"><p>Last name : <?php echo $_SESSION['nom'] ?></p></div>
 			<div class="element"><p>First name : <?php echo $_SESSION['prenom'] ?></p></div>
 			<div class="element"><p>Email adress : <?php echo $_SESSION['mail'] ?></p></div>
+			<div class="element"><p>Age :<?php echo $_SESSION['age'] ?></p></div>
+			<div class="element"><p>Visual acuity : <?php echo $_SESSION['vision'] ?></p></div>
+			<div class="element"><p>Has the driving license : <?php echo $_SESSION['permis'] ?></p></div>
 		</div>
+		<?php } ?>
 	
 	</form>
 </div>
@@ -59,19 +66,3 @@
 
 
 </body>
-</ */
-
-    © 2019 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    Pricing
-    API
-    Training
-    Blog
-    About
-
