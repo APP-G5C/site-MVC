@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	
-	include('./modele/requetes.utilisateursAngl.php');
+	include('./modele/requetes.utilisateurs.php');
 	
 	
 	if (!isset($_GET['fonction']) || empty($_GET['fonction'])) {
@@ -38,7 +38,7 @@
 					echo 'Wrong ID or password !';
 				} else {
 					$_SESSION['mail'] = $mail;
-					$req = $bdd->prepare('SELECT id, nom, prenom, photo, statut FROM utilisateur WHERE mail = :mail');
+					$req = $bdd->prepare('SELECT id, nom, prenom, photo, statut,age,vision,permis FROM utilisateur WHERE mail = :mail');
 					$req->execute(array(
 						'mail' => $mail
 					));
@@ -48,6 +48,9 @@
 					$_SESSION['prenom'] = $donnees['prenom'];
 					$_SESSION['photo'] = $donnees['photo'];
 					$_SESSION['statut'] = $donnees['statut'];
+					$_SESSION['age'] = $donnees['age'];
+					$_SESSION['vision'] = $donnees['vision'];
+					$_SESSION['permis'] = $donnees['permis'];
 					$req->closeCursor();
 					
 					
@@ -75,6 +78,13 @@
 		case 'utilisateursAngl':
 			$vue = 'utilisateurs_administrateurAngl';
 			break;
+		case 'rechercheAngl':
+			$vue = 'rechercheAngl';
+			$liste = recupererTousLesUtilisateur($bdd);
+			if(empty($liste)) {
+				$alerte = "Aucune personne inscrite pour le moment";
+			}
+			break;
 		case 'CreerCompteAngl':
 			$vue = 'creercompteAngl';
 			if (isset($_POST['mail']) ) {
@@ -92,13 +102,31 @@
 				}
 				
 				
-				$req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mail, password, photo, statut) VALUES(?, ?, ?, ?, ?, ?)');
-				$req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['mail'], $_POST['password'], $_FILES['photo']['name'], $statut));
+				$req = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, mail, password, photo,age,vision,permis, statut) VALUES(?, ?, ?, ?, ?,?,?,?, ?)');
+				$req->execute(array($_POST['nom'], $_POST['prenom'], $_POST['mail'], $_POST['password'], $_FILES['photo']['name'], $_POST['age'], $_POST['vision'], $_POST['permis'], $statut));
 			}
 			break;
 		case 'deconnexionAngl':
 			session_destroy();
 			$vue='BienvenueAngl';
+			break;
+		case 'donnees_administrateurAngl':
+			$vue='donnees_administrateurAngl';
+			$nombreUtilisateurs = nombreUtilisateurs($bdd);
+			$nombreConnexionDuJour = nombreConnexionDuJour($bdd);
+			$liste = recupererToutLesScores($bdd);
+			break;
+		
+		case 'ScoreAngl':
+			$vue='ScoreAngl';
+			$liste = recupererScore($bdd,$_SESSION['id']);
+			break;
+		
+		case 'Score_adminAngl':
+			$vue='Score_adminAngl';
+			$liste = recupererScore($bdd,$_GET['id']);
+			$nombreUtilisateurs = nombreUtilisateurs($bdd);
+			$nombreConnexionDuJour = nombreConnexionDuJour($bdd);
 			break;
 		
 		default:

@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	
-	include('./modele/requetes.utilisateursAngl.php');
+	include('./modele/requetes.utilisateurs.php');
 	if (!isset($_GET['fonction']) || empty($_GET['fonction'])) {
 		$function = "messagerieAngl";
 	} else {
@@ -13,9 +13,6 @@
 		case 'messagerieAngl':
 			$vue = 'messagerie_administrateurAngl';
 			$liste = recupererTousLesMessages($bdd, $_SESSION['id']);
-			if (empty($liste)) {
-				$alerte = "Not any message yet";
-			}
 			break;
 		case 'envoyerAngl':
 			$vue = 'envoyer_messageAngl';

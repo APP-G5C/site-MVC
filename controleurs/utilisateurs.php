@@ -74,9 +74,6 @@
 		case 'profil':
 			$vue = "profil";
 			break;
-		case 'modif':
-			$vue = "mofif_capteur";
-			break;
 		case 'profilAdmin':
 			$vue = "profil_administrateur";
 			break;

@@ -18,6 +18,9 @@
 				$alerte = "There is not any question in the Q&A yet";
 			}
 			break;
+		case 'GCUAngl':
+			$vue = "GCUAngl";
+			break;
 		case 'FAQAngl':
 			$vue = "FAQAngl";
 			$liste = recupererTouteLaFAQ($bdd);

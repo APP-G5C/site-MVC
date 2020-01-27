@@ -31,17 +31,18 @@
 			$req = $bdd->prepare('INSERT INTO  score(frequenceCardiaque, TemperaturePeau, PerceptionAuditiveInf, PerceptionAuditiveSup, ReconTonalites,ReprodMotifsSonore,date,id_utilisateur) VALUES(?, ?, ?, ?,?,?,?,?)');
 	
 			$req->execute(array($freqcard, $temp, $seuilinf,$seuilsup ,$reconton,$reprodmotifs,$date,$id));
-
+			break;
+		case 'modif':
+			$vue = "modif_capteur";
+			break;
 			
 				
 
 				
-			break;
+			
 		
-			$vue="capteurs";
-			$ListCarte = $bdd->query('SELECT ID_carte FROM carte');
-			break;
-		
+			
+			
 		default:
 			// si aucune fonction ne correspond au paramètre function passé en GET
 			$vue = "erreur404";

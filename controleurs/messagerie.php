@@ -13,9 +13,6 @@
 		case 'messagerie':
 			$vue = 'messagerie_administrateur';
 			$liste = recupererTousLesMessages($bdd, $_SESSION['id']);
-			if (empty($liste)) {
-				$alerte = "Aucun message pour l'instant";
-			}
 			break;
 		case 'envoyer':
 			$vue = 'envoyer_message';
