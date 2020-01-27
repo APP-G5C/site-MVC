@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php include("header.php"); ?>
+
 <div class="bg">
 	<form action="#" method="POST">
 		<div class="flex_container">

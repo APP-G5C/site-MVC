@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="style/rechercheCSS.css">
 	<?php include("headerAdmin.php"); ?>
 
+
 <script>
 function myFunction() {
   // Declare variables

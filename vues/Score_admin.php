@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php include("headerAdmin.php");
+ 
 	$arrayF = array();
 	$arrayT = array();
 	$arrayPmin = array();

@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="style/utilisateursCSS.css">
 </head>
 <body>
-<?php include("headerAdmin.php"); ?>
+<?php include("headerAngl.php"); ?>
+
 <div class="bg">
 	<form action="#" method="POST">
 		<h2>Utilisateur</h2>

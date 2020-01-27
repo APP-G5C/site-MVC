@@ -6,8 +6,8 @@
 	<title>profil</title>
 </head>
 <body>
-<?php include("header.php"); ?>
-<?php $repertoire = "http://localhost/site%20APP%20MVC/"; ?>
+<?php include("headerAngl.php"); ?>
+
 
 
 

@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php include("headerAdmin.php"); ?>
+
 <div class="bg">
 	<form action="#" method="POST">
 		<h2>Utilisateur</h2>

@@ -6,9 +6,9 @@
 	<title>profil</title>
 </head>
 <body>
-<?php include("headerAdmin.php"); ?>
+<?php include("headerAdminAngl.php"); ?>
 
-<?php $repertoire = "http://localhost/site%20APP%20MVC/"; ?>
+
 
 
 
