@@ -39,7 +39,7 @@ function myFunction() {
 		<h3>Recherche</h3>
 		
 		
-		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Chercher des noms...">
 
 
 
