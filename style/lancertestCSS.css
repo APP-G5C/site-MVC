@@ -92,13 +92,3 @@ p{
     width: 360px;
     margin-top: 40px;
 }
-
-form {
-    width:85%;
-    padding: 30px;
-    background-color: rgba(0,0,0,0.7);
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-    margin-right: 150px;
-    margin-left: 80px;
-    margin-top: 0px;
-}

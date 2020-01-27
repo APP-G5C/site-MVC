@@ -1,0 +1,10 @@
+#cont {
+    display : flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    vertical-align : auto;
+}
+
+.ele {
+    margin-right: 10px;
+}
